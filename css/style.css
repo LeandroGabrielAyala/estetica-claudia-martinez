@@ -1,0 +1,617 @@
+* {
+	box-sizing: border-box;
+}
+
+body {
+	padding: 0;
+	margin: 0;
+	background: #f88ffa;
+}
+
+#header-container {
+	/*background-image: url(../img/bg.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center center;*/
+	position: relative;
+	width: 100%;
+	height: 700px;
+	overflow: hidden;
+}
+
+#header-container:after {
+	content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #f96efb; /* For browsers that do not support gradients */
+	background: -webkit-linear-gradient(#f96efb, #fcc8fd, white); /* For Safari 5.1 to 6.0 */
+	background: -o-linear-gradient(#f96efb, #fcc8fd, white); /* For Opera 11.1 to 12.0 */
+	background: -moz-linear-gradient(#f96efb, #fcc8fd, white); /* For Firefox 3.6 to 15 */
+	background: linear-gradient(#f96efb, #fcc8fd, white); /* Standard syntax */
+}
+
+#header-container nav {
+	background-color: transparent;
+	position: absolute;
+	width: 100%;
+	height: auto;
+	padding: 2em 0;
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+	z-index: 100;
+}
+
+nav #logo {
+	width: auto;
+	height: 70px;
+}
+
+#header-container nav a {
+	/*color: #ee668c; */
+	color: white; 
+	font-family: 'Ubuntu', sans-serif;
+	font-size: 17px;
+	text-decoration: none;
+	margin: 0 50px;
+	padding: .5em 0em;
+	border-bottom: 2px solid transparent;
+	border-top: 2px solid transparent;
+	transition: all .5s ease;
+}
+
+#header-container nav a:hover {
+	border-bottom: 2px solid white;
+	border-top: 2px solid white;
+}
+
+#header-container header {
+	width: 100%;
+	text-align: center;
+	position: absolute;
+	top: 30%;
+	z-index: 150;	
+}
+
+#header-container header h1 {
+	font-family: 'Playball', cursive;
+	font-weight: normal;
+	color: #ab2d53;
+	font-size: 100px;
+	margin: 0;
+	padding: 0;
+}
+
+#header-container header h2 {
+	font-family: 'Ubuntu', sans-serif;
+	font-weight: normal;
+	color: #f2749b;
+	font-size: 40px;
+	margin: 0;
+	padding: 0;	
+}
+
+#guia-container {
+	width: 100%;
+	height: auto;
+
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.guia-container_item1 {
+	font-family: 'Ubuntu', sans-serif;
+	font-weight: bold;
+	color: white;
+	text-align: center;
+	position: relative;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 100%;
+	height: 350px;
+	background-image: url(../img/girl1.jpg);
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center center;
+	transition: all .4s ease;
+}
+
+.guia-container_item2 {
+	font-family: 'Ubuntu', sans-serif;
+	font-weight: bold;
+	color: white;
+	text-align: center;
+	position: relative;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 100%;
+	height: 350px;
+	background-image: url(../img/girl2.jpg);
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center center;
+}
+
+.guia-container_item3 {
+	font-family: 'Ubuntu', sans-serif;
+	font-weight: bold;
+	color: white;
+	text-align: center;
+	position: relative;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 100%;
+	height: 350px;
+	background-image: url(../img/girl3.jpg);
+	background-position: center center;
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+
+.guia-container_item4 {
+	font-family: 'Ubuntu', sans-serif;
+	font-weight: bold;
+	color: white;
+	text-align: center;
+	position: relative;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 100%;
+	height: 350px;
+	background-image: url(../img/girl4.jpg);
+	background-position: center center;
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+/*
+.guia-container_item1:after {
+	content: "";
+	display: block;
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: 100;
+	width: 100%;
+	height: 350px;
+	background-color: blue;
+	opacity: .5;
+}
+
+.guia-container_item2:after {
+	content: "";
+	display: block;
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: 100;
+	width: 100%;
+	height: 350px;
+	background-color: red;
+	opacity: .5;
+}
+
+.guia-container_item3:after {
+	content: "";
+	display: block;
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: 100;
+	width: 100%;
+	height: 350px;
+	background-color: pink;
+	opacity: .5;
+}
+
+.guia-container_item4:after {
+	content: "";
+	display: block;
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: 100;
+	width: 100%;
+	height: 350px;
+	background-color: yellow;
+	opacity: .5;
+}
+*/
+
+[class^="service_"]
+ {
+	width: 100%;
+	height: 450px;	
+	background: #f96efb; /* For browsers that do not support gradients */
+	background: -webkit-linear-gradient(#fcc8fd, white); /* For Safari 5.1 to 6.0 */
+	background: -o-linear-gradient(#fcc8fd, white); /* For Opera 11.1 to 12.0 */
+	background: -moz-linear-gradient(#fcc8fd, white); /* For Firefox 3.6 to 15 */
+	background: linear-gradient(#fcc8fd, white); /* Standard syntax */
+	width: 100%;
+
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+[class$="_image"] {
+	width: 100%;
+	height: 450px;
+	overflow: hidden;
+	position: relative;
+}
+
+[class$="_image"]:after {
+	content: "";
+	display: block;
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: 100;
+	width: 100%;
+	height: 450px;
+	background-color: blue;
+	opacity: 1;
+	background: red; /* For browsers that do not support gradients */
+	background: -webkit-linear-gradient(left bottom, black, transparent); /* For Safari 5.1 to 6.0 */
+	background: -o-linear-gradient(top right, black, transparent); /* For Opera 11.1 to 12.0 */
+	background: -moz-linear-gradient(top right, black, transparent); /* For Firefox 3.6 to 15 */
+	background: linear-gradient(to top right, black, transparent); /* Standard syntax */
+}
+
+.podoestetica_image {
+	background-image: url(../img/podoestetica1.jpg);
+	background-position: center center;
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+
+.masaje_image {
+	background-image: url(../img/masaje2.jpg);
+	background-position: center center;
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+
+.corporal_image {
+	background-image: url(../img/corporal.jpg);
+	background-position: center center;
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+
+.facial_image {
+	background-image: url(../img/facial.jpg);
+	background-position: center center;
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+
+[class$="_description"] {
+	width: 100%;
+	height: 450px;
+	padding: 0;
+}
+
+[class$="container_title"] {
+	font-family: 'Playball', cursive;
+	font-weight: normal;
+	font-size: 40px;
+	width: 100%;
+	height: auto;
+	color: white;
+	margin: 0;
+	padding: 1em 0;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+[class$="container_title"]:before {
+	content: "";
+	display: block;
+	border: 1px solid white;
+	width: 5%;
+	margin: 0 .5em 0 0;	
+}
+
+[class$="container_title"]:after {
+	content: "";
+	display: block;
+	border: 1px solid white;
+	width: 5%;
+	margin: 0 0 0 .5em;	
+}
+
+.service-title {
+	width: 100%;
+	font-family: 'Ubuntu', sans-serif;
+	font-size: 20px;
+	/*color: #f2749b;*/
+	color: #ab2d53;
+	text-align: center;
+	margin: 0;
+	padding: .5em 0;
+}
+
+.service-title:after {
+	content: "";
+	display: block;
+	width: 10%;
+	border: 1px solid #ab2d53;
+	margin: .7em auto 0 auto;
+	padding: 0;
+}
+
+.parrafo {
+	font-family: 'Ubuntu', sans-serif;
+	font-size: 18px;
+	color: #333;
+	padding: 1em;
+	margin: 0;
+}
+
+.color {
+	color: black;
+	font-weight: bold;
+}
+
+.color2 {
+	color: #71283c;
+	font-weight: bold;
+}
+
+.gallery-row {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+
+	width: 100%;
+	height: 300px;
+}
+
+.gallery-column1 {
+	background-image: url(../img/corporal.jpg);
+	background-position: center center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	overflow: hidden;
+
+	width: 25%;
+	height: 300px;
+}
+.gallery-column2 {
+	background-image: url(../img/corporal2.png);
+	background-position: center center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	overflow: hidden;
+
+	width: 25%;
+	height: 300px;
+}
+.gallery-column3 {
+	background-image: url(../img/facial.jpg);
+	background-position: center center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	overflow: hidden;
+
+	width: 25%;
+	height: 300px;
+}
+.gallery-column4 {
+	background-image: url(../img/facial2.jpg);
+	background-position: center center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	overflow: hidden;
+
+	width: 25%;
+	height: 300px;
+}
+.gallery-column5 {
+	background-image: url(../img/masaje.jpg);
+	background-position: center center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	overflow: hidden;
+
+	width: 25%;
+	height: 300px;
+}
+.gallery-column6 {
+	background-image: url(../img/masaje2.jpg);
+	background-position: center center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	overflow: hidden;
+
+	width: 25%;
+	height: 300px;
+}
+.gallery-column7 {
+	background-image: url(../img/podoestetica1.jpg);
+	background-position: center center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	overflow: hidden;
+
+	width: 25%;
+	height: 300px;
+}
+.gallery-column8 {
+	background-image: url(../img/podoestetica2.jpg);
+	background-position: center center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	overflow: hidden;
+
+	width: 25%;
+	height: 300px;
+}
+.gallery-column9 {
+	background-image: url(../img/corporal.jpg);
+	background-position: center center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	overflow: hidden;
+
+	width: 25%;
+	height: 300px;
+}
+.gallery-column10 {
+	background-image: url(../img/corporal2.png);
+	background-position: center center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	overflow: hidden;
+
+	width: 25%;
+	height: 300px;
+}
+.gallery-column11 {
+	background-image: url(../img/facial.jpg);
+	background-position: center center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	overflow: hidden;
+
+	width: 25%;
+	height: 300px;
+}
+.gallery-column12 {
+	background-image: url(../img/facial2.jpg);
+	background-position: center center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	overflow: hidden;
+
+	width: 25%;
+	height: 300px;
+}
+
+.contact-subcontainer {
+	width: 100%;
+	max-width: 1024px;
+	height: auto;
+	overflow: hidden;
+	padding: 0;
+	margin: 0 auto;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: flex-start;
+}
+
+.form1 {
+	width: 50%;
+	height: auto;
+	margin: 0;
+	padding: 0 1em 1em 1em;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.form1 input {
+	font-family: 'Ubuntu', sans-serif;
+	font-weight: bold;
+	color: #7e3884;	width: 100%;
+	height: 40px;
+	margin: 0 0 10px 0;
+	padding: 0 0 0 1em;
+	border-radius: 3px;
+	border: 1px solid #f96efb;
+	outline: none;
+}
+
+.form1 textarea {
+	font-family: 'Ubuntu', sans-serif;
+	font-weight: bold;
+	color: #7e3884;
+	width: 100%;
+	max-width: 100%;
+	height: 150px;
+	max-height: 150px;
+	margin: 0 0 8px 0;
+	padding: .7em 0 0 1em;
+	border-radius: 3px;
+	border: 1px solid #f96efb;
+	outline: none;
+}
+
+.form1 .btn {
+	font-family: 'Ubuntu', sans-serif;
+	width: 100%;
+	border: 1px solid #f96efb;
+	border-radius: 3px;
+	padding: 1em 0;
+	background: #cb2ed8;
+	color: white;
+	font-weight: bold;
+	transition: all .5s ease;
+}
+
+.form1 .btn:hover {
+	background: #7e3884;
+	color: white;
+}
+
+.map-container {
+	width: 50%;
+	height: auto;
+	margin: 0;
+	padding: 0 1em 1em 0;
+	overflow: hidden;
+}
+
+.map-container iframe {
+	margin: 0;
+	padding: 0;
+	width: 100%;
+	height: 350px;
+}
+
+#footer-container {
+	background-color: #7e3884;
+	width: 100%;
+	height: auto;
+	margin-top: 20px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.copy-container {
+	font-family: 'Ubuntu', sans-serif;
+	font-size: 12px;
+	color: white;
+	width: 50%;
+	text-align: center;
+}
+
+#footer-container .social-container {
+	width: 50%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin: 0;
+	padding: 1em 0;
+}
+
+#footer-container .social-container img {
+	width: auto;
+	height: 20px;
+	padding: 0 1em;
+}
